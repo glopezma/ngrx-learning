@@ -1,0 +1,10 @@
+<ul *ngFor="let tutorial of tutorials$ | async; let i=index">
+  <li>{{tutorial.id}}</li>
+  <li>{{tutorial.title}}</li>
+  <li>{{tutorial.val}}</li>
+</ul>
+
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="update()">Update Tutorial</button>
+<button (click)="reset()">Reset Tutorial</button>
